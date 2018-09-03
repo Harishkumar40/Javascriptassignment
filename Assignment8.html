@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+li{text-decoration:none;}
+</style>
+
+
+</head>
+<body>
+
+<div class="navbar">
+
+  <div class="dropdown" onclick="countMenu()">
+    <button class="dropbtn">Dropdown
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div id="dropdown-content" class="dropdown-content">
+
+      <!--a href="#"><script>document.write(arr[0]);</script></a>
+      <a href="#">20</a>
+      <a href="#">30</a>
+      <a href="#">40</a-->
+
+      <li>10</li>
+      <li>20</li>
+      <li>30</li>
+      <li>40</li>
+    </div>
+  </div>
+</div>
+
+<h3>program to count and display the items of a dropdown list</h3>
+
+
+<script type="text/javascript">
+var arr;
+   function countMenu(){
+     var text = "";
+     arr=["10", "20", "30", "40"];
+     alert("Count of items in dropdown list is:"+arr.length);
+     for(var i in arr){
+       text += arr[i];
+     }
+     alert("Items of drop down list is:"+text);
+
+
+   }
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Diagonal, White to Black circles</title>
+
+</head>
+<body>
+  <h1>Sorting Elements</h1>
+
+  <button onclick="srtFunction()">Click To Sort</button>
+  <p id="srt"></p>
+
+
+<script>
+  var sorting = [12,11];
+
+  document.getElementById("srt").innerHTML=sorting;
+  function srtFunction(){
+    sorting.sort(function (a,b){ return a-b });
+    alert(" After SORT");
+    document.getElementById("srt").innerHTML=sorting;
+
+
+      alert(sorting);
+  }
+</script>
+
+</body>
+</html>

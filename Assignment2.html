@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+
+<body>
+  <h2>Javascript object Sort</h2>
+  <button onclick="fruitChange()">Click To Sort</button>
+  <p id="fruitSort"></p>
+
+
+<script>
+  var fruits=["Guava","Mausabmi","orange","Apple"];
+  document.getElementById('fruitSort').innerHTML = fruits;
+
+  function fruitChange(){
+    fruits.sort();
+    document.getElementById('fruitSort').innerHTML=fruits;
+  }
+
+
+</script>
+
+</body>
+</html>

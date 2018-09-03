@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arrays</h2>
+
+<p>JavaScript array elements are accesses using numeric indexes (starting from 0).</p>
+
+<p id="demo"></p>
+
+<script>
+
+var cars = ["Saab", "Volvo", "BMW","Audi","Lemborgini","RangeRover"];
+/*for(var i=0;i<cars.length;i++){
+document.writeln(cars[i]);
+}
+*/
+alert(cars.length);
+alert("There are 6 elements in the array= "+cars);
+
+//uinput=document.getElementById("myNumber").value;
+uinput= prompt("Please enter a Number");
+
+alert(uinput);
+if((uinput>=cars.length)){
+for( i=0;i<cars.length;i++){
+document.write(cars[i]+",");
+}
+}
+else {
+  alert("The value of Uinput="+uinput);
+  var j=uinput-1;
+  var f=cars.length-j;
+
+ for(var x=f;x<=cars.length;x++){
+    document.writeln(cars[x-1]);
+ }
+}
+</script>
+
+</body>
+</html>

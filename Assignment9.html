@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Assignment9</title>
+
+</head>
+<body>
+  <h1>Assignment9</h1>
+   <img id="images" src="crop.jpg" alt="nature Scene" height="500px" width="500px" onclick="Chng()" onmouseover="change1()" onmouseout="chngToOriginal()"/>
+
+
+   <script>
+   function Chng(){
+     document.getElementById('images').src="butterfly.jpg";
+   }
+   function change1()
+   {
+     document.getElementById('images').src="img_nature_wide.jpg";
+   }
+   function chngToOriginal(){
+     document.getElementById('images').src="crop.jpg";
+   }
+   </script>
+</body>
+</html>
